@@ -6,9 +6,9 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Crypt;
 
 // @note If your APP_KEY changes, then you need to re-encrypt the password
-class EncryptPassword extends Command
+class PasswordEncrypt extends Command
 {
-	protected $signature = 'encrypt:password {password? : Password to encrypt}';
+	protected $signature = 'password:encrypt {password? : Password to encrypt}';
 
 	protected $description = 'This will treat passwords used in config/ldap.php as encrypted with the APP_KEY.';
 
